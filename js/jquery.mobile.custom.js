@@ -476,7 +476,7 @@
 		phonegapNavigationEnabled: false,
 
 		//automatically initialize the DOM when it's ready
-		autoInitializePage: true,
+		autoInitializePage: false,
 
 		pushStateEnabled: true,
 
