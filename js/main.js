@@ -1,5 +1,6 @@
 $(function() {
 	$canvas = $('#canvas');
+	stretchCanvas();
 	$('#intro').click(function() {
 		begin();
 	});
@@ -29,9 +30,13 @@ function flashSlide() {
 }
 
 function activateBoard() {
-	stretchCanvas();
-	initDrawing();
+	canDraw=true;
 	$('body').addClass('drawing');
+	stretchCanvas();
+
+	setTimeout(function() {
+		$('body').removeClass('drawing').addClass('review');
+	},5000);
 }
 
 function stretchCanvas() {

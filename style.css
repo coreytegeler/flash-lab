@@ -61,27 +61,34 @@ main {
 #intro .logo img {
 	display: table;
 	margin: auto;
-	width: 500px;
+	width: 300px;
 }
 #drawingBoard {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	display: none;
-	z-index: 0;
+	/*display: none;*/
+	/*opacity: 0;*/
+	z-index: -1;
 }
 .drawing #drawingBoard {
 	display: block;
 	z-index: 3;
-	opacity: 1;
+	opacity: 0;
 }
 .review #drawingBoard {
+	z-index: 3;
 	opacity: 1;
+	background: white;
 }
 #drawingBoard canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+#drawingBoard canvas[resize] {
+    width: 100%;
+    height: 100%;
 }
 #slide {
 	width: 100%;
