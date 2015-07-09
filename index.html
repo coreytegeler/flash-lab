@@ -1,30 +1,122 @@
 <html>
 <head>
 	<title>Flash Lab</title>
-	<link rel="stylesheet" href="style.css"/>
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
-	<script type="text/javascript" src="js/paper.js"></script>
-	<script type="text/javascript" src="js/helpers.js"></script>
-	<script type="text/paperscript" src="js/draw.js" canvas="canvas"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="image_src" href="" />
+    <link rel="shortcut icon" type="image/gif" href="">
+	<link rel="stylesheet" href="styles/reset.css"/>
+	<link rel="stylesheet" href="styles/style.css"/>
+	<script type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
+	<script type="text/javascript" src="scripts/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="scripts/helpers.js"></script>
+	<script type="text/javascript" src="scripts/two.min.js"></script>
+	<script type="text/javascript" src="scripts/draw.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body class="home">
-	<aside>
-
-	</aside>
-	<main>
-		<div id="intro">
-			<div class="logo">
-				<img src="images/logo-white.png"/>
+	<header id="top">
+		<div class="title" id="logo">
+			<div class="horz-center">
+				<div class="vert-center">
+					Flash Lab
+				</div>
 			</div>
 		</div>
+		<!-- <div class="title" id="cue">
+			<div class="horz-center">
+				<div class="vert-center">
+					<div class="titleText"></div>
+				</div>
+			</div>
+		</div> -->
+	</header>
 
-		<div id="slide"></div>
+	<main>
+		<section class="cue" id="position">
+			<header>
+				<div class="vert-center">
+					<div class="titleText">
+						Position
+					</div>
+				</div>
+			</header>
+			<div class="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim ante ac ipsum tempus semper. Nullam ut est et dolor commodo faucibus a a odio. Duis ut dolor in magna consequat tristique. Nulla egestas libero vel porttitor condimentum. Nulla turpis magna, tincidunt hendrerit erat eu, ultricies efficitur felis. Quisque eleifend orci ligula, sit amet maximus augue commodo nec. Aliquam non massa lacus. Donec neque odio, molestie quis convallis ut, tempor ac sem. Pellentesque id eleifend nulla.</p>
+				<div class="begin" data-cue="position">
+					<div class="vert-center">
+						Begin
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<div id="drawingBoard">
-			<canvas id="canvas" class="off" resize></canvas>
-		</div>
+		<section class="cue" id="sizeAndShape">
+			<header>
+				<div class="vert-center">
+					<div class="titleText">
+						Size &amp; Shape
+					</div>
+				</div>
+			</header>
+			<div class="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim ante ac ipsum tempus semper. Nullam ut est et dolor commodo faucibus a a odio. Duis ut dolor in magna consequat tristique. Nulla egestas libero vel porttitor condimentum. Nulla turpis magna, tincidunt hendrerit erat eu, ultricies efficitur felis. Quisque eleifend orci ligula, sit amet maximus augue commodo nec. Aliquam non massa lacus. Donec neque odio, molestie quis convallis ut, tempor ac sem. Pellentesque id eleifend nulla.</p>
+				<div class="begin" data-cue="sizeAndShape">
+					<div class="vert-center">
+						Begin
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cue" id="brightness">
+			<header>
+				<div class="vert-center">
+					<div class="titleText">
+						Brightness
+					</div>
+				</div>
+			</header>
+			<div class="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim ante ac ipsum tempus semper. Nullam ut est et dolor commodo faucibus a a odio. Duis ut dolor in magna consequat tristique. Nulla egestas libero vel porttitor condimentum. Nulla turpis magna, tincidunt hendrerit erat eu, ultricies efficitur felis. Quisque eleifend orci ligula, sit amet maximus augue commodo nec. Aliquam non massa lacus. Donec neque odio, molestie quis convallis ut, tempor ac sem. Pellentesque id eleifend nulla.</p>
+				<div class="begin" data-cue="brightness">
+					<div class="vert-center">
+						Begin
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="info" id="about">
+			<header>
+				<div class="vert-center">
+					<div class="titleText">
+						About
+					</div>
+				</div>
+			</header>
+			<div class="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim ante ac ipsum tempus semper. Nullam ut est et dolor commodo faucibus a a odio. Duis ut dolor in magna consequat tristique. Nulla egestas libero vel porttitor condimentum. Nulla turpis magna, tincidunt hendrerit erat eu, ultricies efficitur felis. Quisque eleifend orci ligula, sit amet maximus augue commodo nec. Aliquam non massa lacus. Donec neque odio, molestie quis convallis ut, tempor ac sem. Pellentesque id eleifend nulla.</p>
+			</div>
+		</section>
+
+		<section class="info" id="howTo">
+			<header>
+				<div class="vert-center">
+					<div class="titleText">
+						How To
+					</div>
+				</div>
+			</header>
+			<div class="intro">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim ante ac ipsum tempus semper. Nullam ut est et dolor commodo faucibus a a odio. Duis ut dolor in magna consequat tristique. Nulla egestas libero vel porttitor condimentum. Nulla turpis magna, tincidunt hendrerit erat eu, ultricies efficitur felis. Quisque eleifend orci ligula, sit amet maximus augue commodo nec. Aliquam non massa lacus. Donec neque odio, molestie quis convallis ut, tempor ac sem. Pellentesque id eleifend nulla.</p>
+			</div>
+		</section>
 	</main>
+
+	<div id="easel">
+		
+	</div>
 </body>
 </html>
